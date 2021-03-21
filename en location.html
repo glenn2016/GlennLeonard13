@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+
+   <meta charset="utf-8">
+	<style type="text/css">
+		
+		*{	
+	padding: 0; 
+	margin: center;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-family: cursive;
+	list-style: none;
+
+}
+.navbar{
+	width: 	100%;
+	position: fixed;
+	background-color: black;
+}
+
+.navbar .max-width{
+	width: 1300px;
+	display: flex;	
+	justify-content:space-between;	
+	align-content: 	center;	
+	margin: 20px auto;
+
+
+} 
+ul li a:hover{
+	background-color: #fff;
+    color: #000;
+    text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 1.1s ease;
+} 
+.logo {
+	width: 30%;
+}
+
+.menu{
+	padding-top: 10px;
+}
+.menu li{
+	display:inline-block;	
+}
+.menu li a{
+
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+	margin-left: 25px;
+	transition: color 1s;
+}
+.menu li a:hover{
+	color: black;
+}
+
+.mn::after{
+    content: "";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sous{
+    display: none;
+    position: absolute;
+}
+.active {
+	background-color: #fff;
+	color: black;
+}
+.active{
+	color: #black;
+}
+.sous li{
+    border: 2px solid  black;
+    float: none;
+    text-align: center;
+    width: 100%;
+    background-color: #fdcb6e;
+}
+.navbar .menu li:hover .sous{ 
+        display: block;
+
+} 
+.home{
+	background: url('keys.png');
+	height: 570px;
+	display: flex;
+	background-size: cover;
+}
+
+.home .max-width{
+	color: white;
+	margin: auto 120px;
+    border-radius: 14px;
+    width: 50%;
+}
+.home .home-content .text-1{
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 45px;	
+} 
+.image-tableau{
+	width: 80%;
+}
+.img-gra:hover{
+text-decoration: none;
+color: #fff;
+padding: 45px;
+transition: 1.1s ease;
+}
+.text-2{
+	color: white;
+	margin-top: 45px;
+	margin-left: 45px;
+}
+.text-footer{
+	font-size: 15px; 
+	width: 333.3%;
+	height: 100px;
+	background-color:black;
+	color: white;
+	text-align: center; 
+	margin-top:  55px; 
+	padding-top:50px;
+}
+</style> 
+</head>
+<body>
+
+		<nav class="navbar">
+			<div class="max-width">
+				<div>
+					<img src="ment.png"  class="logo">
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">Acceuil </a></li>
+					<li><a href="a propos.html" >A propos</a></li>
+					<li><a class="mn" href="" class="active" style="color:black; padding:5px 20px; background-color: #fff;">Services</a>
+						<ul class="sous">
+							<li><a href="maitenance.html">maitenance</a></li>
+					           <li><a href="en vente.html">en vente</a></li>
+					           <li><a href="en location.html">en location</a></li>
+
+					     </ul>
+					</li>
+					<li><a href="contact.html">contact</a></li>
+
+				</ul>
+             
+
+			</div> 
+
+		</nav> 
+<div style="background-color: #0F2124;">
+		<section class="home" class="image-diapo" name="diapo">
+			<div class="max-width">
+				<div class="home-content">
+						<div class="text-1" style="font-size: 45px; font-family: Lucida Bright; color: #000;">Le modele qui vous convient<br>Mercedes-benz</div>
+		              
+		      				</div>
+			</div>  
+</section>      
+
+<div>
+			<center>
+			<table style="margin-left: 100PX; margin-top: 60px;" >
+			<tr>
+				<td>
+			<a href="#" class="img-gra"><img src="vrai1-image.jpeg" class="image-tableau"></a><br>		
+<span style="font-size:15px; ">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a  href="#" class="img-gra"><img src="image.MQ6.6.20200910191318.jpeg" class="image-tableau"></a><br>	
+<span style="font-size:15px; " >					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+
+		</table>		
+        </center>
+							<table style="margin-left: 100PX; margin-top: 60px;" >
+			<tr>
+				<td>
+			<a  href="#" class="img-gra"><img src="vrai3-image.jpeg" class="image-tableau"></a><br>		
+<span style="font-size:15px; ">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a  href="#" class="img-gra"><img src="vrai4-image.jpeg"  class="image-tableau" ></a><br>	
+<span style="font-size:15px; ">					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+
+		</table>
+							<table style="margin-left: 100PX; margin-top: 60px;" >
+			<tr>
+				<td>
+			<a  href="#" class="img-gra"><img src="vrai5-image.jpeg" class="image-tableau" ></a><br>		
+<span style="font-size:15px; ">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a  href="#" class="img-gra"><img src="vrai6-image.jpeg" class="image-tableau"%  ></a><br>	
+<span style="font-size:15px;">					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+
+		</table> 
+
+				</table>
+							<table style="margin-left: 100PX; margin-top: 60px;">
+			<tr>
+				<td>
+			<a href="p-1em - .html"  class="img-gra"><img src="vrai7-image.jpeg" class="image-tableau" ></a><br>		
+<span style="font-size:15px;">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a  href="#"  class="img-gra"><img src="vrai8-image.jpeg" class="image-tableau"  ></a><br>	
+<span style="font-size:15px;">					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+
+		</table>
+
+				</table>
+							<table style="margin-left: 100PX; margin-top: 60px;">
+			<tr>
+				<td>
+			<a  href="#" class="img-gra"><img src="vrai9-image.jpeg" class="image-tableau" ></a><br>		
+<span style="font-size:15px;">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a  href="#"  class="img-gra"><img src="vrai10-image.jpeg" class="image-tableau"  ></a><br>	
+<span style="font-size:15px;">					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+</table> 
+		<div class="text-2">
+  <span>pour <a href="contact.html" style="color: blue;">plus</a> d'information</span>
+  </div>
+</div>
+</div>
+
+
+</body> 
+<footer style="background-color: white;  width:30%;" >
+	<div ><p class="text-footer">Copyright ©2021 Code Opacity. Dessigned By GLENN-LEONARD</p></div> 
+</footer>
+</html>

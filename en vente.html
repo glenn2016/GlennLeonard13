@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="C:\PC\COURS\HTML\EXAMEN\font-awesome-4.7.0\css\font-awesome.min.css"> 
+	<style type="text/css">
+		
+		*{	
+	padding: 0; 
+	margin: center;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-family: Lucida Bright;
+	list-style: none;
+
+}
+.navbar{
+	width: 	100%;
+	position: fixed;
+	background-color: black;
+}
+
+.navbar .max-width{
+	width: 1300px;
+	display: flex;	
+	justify-content:space-between;	
+	align-content: 	center;	
+	margin: 20px auto;
+
+
+} 
+ul li a:hover{
+	background-color: #fff;
+    color: #000;
+    text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 1.1s ease;
+} 
+.logo {
+	width: 30%;
+}
+
+.menu{
+	padding-top: 10px;
+}
+.menu li{
+	display:inline-block;	
+}
+.menu li a{
+
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+	margin-left: 25px;
+	transition: color 1s;
+}
+.menu li a:hover{
+	color: black;
+}
+
+.mn::after{
+    content: "";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sous{
+    display: none;
+    position: absolute;
+}
+.active {
+	background-color: #fff;
+	color: black;
+}
+.active{
+	color: black;
+}
+.sous li{
+    border: 2px solid  black;
+    float: none;
+    text-align: center;
+    width: 100%;
+    background-color: #fdcb6e;
+}
+.navbar .menu li:hover .sous{ 
+        display: block;
+
+} 
+.home{
+	background: url('grande-imagecover1.jpeg');
+	height: 570px;
+	display: flex;
+	background-size: cover;
+	animation: s 199s infinite;
+}
+@keyframes s{
+	25%{
+   background: url('grande-imagecover1.jpeg');
+   }
+   	50%{
+   background: url('grande-imagecover2.jpeg');
+   }
+   	25%{
+   background: url('grande-imagecover3.jpeg');
+   }
+}
+.home .max-width{
+	color: white;
+	margin: auto 120px;
+    border-radius: 14px;
+    width: 50%;
+}
+.home .home-content .text-1{
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 45px;
+	
+}
+ .text-2{
+	color: white;
+	margin-top: 45px;
+	margin-left: 45px;
+}
+.image-tableau{
+	width: 90%;
+} 
+.text-3{
+	margin-left: 45px;
+}
+
+.image-2-2{
+	width:203%;
+}
+.img-gra:hover{
+text-decoration: none;
+color: #fff;
+padding: 45px;
+transition: 1.1s ease;
+}
+footer{
+	position: absolute;
+	bottom: -3400px;
+	right: 0;
+	left:0;
+	background-color: black;
+	height: auto;
+	width: 100vw;
+	font-family: "open sans";
+	padding-top: 40px;
+	color: #fff;
+} 
+.footer-content{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size:1.8rem;
+	font-weight:400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+max-width: 500px;
+margin:  10px auto;
+line-height: 28px;
+font-size: 14px;
+} 
+.sociaux{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;	
+}
+.sociaux li{
+	margin: 0 10px;
+
+} 
+.sociaux a{
+	text-decoration: none;
+	color: white; 
+	transition: color 3.4s ease;
+}
+.sociaux a i{
+	font-size: 1.1rem;
+
+}
+.sociaux a:hover i{
+	color: aqua;
+
+}
+.footer-botom{
+	background:#000;
+	width: 100vw;
+	padding: 10px 0;
+	text-align: center;
+}
+.footer-botom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+
+}
+.footer-botom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+	</style> 
+
+
+
+
+</head> 
+<body >
+    
+		<nav class="navbar">
+			<div class="max-width">
+				<div >
+					<img src="ment.png"  class="logo">
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">Acceuil </a></li>
+					<li><a href="a propos.html" >A propos</a></li>
+					<li><a class="mn" href="" class="active" style="color:black; padding:5px 20px; background-color: #fff;">Services</a>
+						<ul class="sous">
+							<li><a href="maitenance.html">maitenance</a></li>
+					           <li><a href="en vente.html">en vente</a></li>
+					           <li><a href="en location.html">en location</a></li>
+					     </ul>
+					</li>
+					<li><a href="contact.html">contact</a></li>
+
+				</ul>
+             
+
+			</div> 
+
+		</nav> 
+
+<div style="background-color: #0F2124;">
+			<section class="home" class="image-diapo" name="diapo">
+			<div class="max-width">
+				<div class="home-content">
+					<hr>
+						<div class="text-1" style="font-size: 45px; font-family: Lucida Bright; color: #000;">Offre du monment<br>Mercedes-benz</div>
+		              
+		      				</div>
+			</div>
+		</section> 
+       <script>
+        	var images=[];
+            images[0]="grande-imagecover1.jpeg";
+             images[1]="grande-imagecover2.jpeg";
+              images[2]="grande-imagecover3.jpeg";             
+
+                     var i=0;
+                     timer=2000;
+                   function changerimage(){
+                   	document.diapo.src=images[i];
+                     if (i<images.length-1) {
+                     	i++;
+                     }
+                  else{
+                  	i=0; 
+                  }
+                  setTimeout("changerimage()",timer);
+                   }    
+                   window.onload=changerimage;
+        </script>
+		<div class="text-2">
+     À la recherche d’un nouveau véhicule ?<br>
+  Consultez l’intégralité des offres du moment sur nos différents modèles Mercedes-Benz à destination des particuliers et profitez de l’offre la <br>plus adaptée à vos besoins.<br>
+		</div> 
+
+		<div class="text-2">
+			Offres du moment
+			<br> <br>
+			<hr width="200" style="margin-right: 1825px;">
+			<br>
+       <span style="font-size: 30px; font-family: Lucida Bright" >Jusqu'au 31 mars 2021, profitez de nos offres sur la Classe A Compacte et<br> le GLB.</span>     
+		</div> 
+
+		<table style="margin-left: 100PX; margin-top: 60px;">
+			<tr>
+				<td>
+			<a href="p-1em - .html"  class="img-gra"><img src="photo-1.png" class="image-tableau" ></a><br>		
+<span style="font-size:15px;">      Classe A <br>
+                    À partir de 290 €/mois*<br>
+                    En LLD 37 mois 45 000 km - 1er loyer de 2 915 €<br>
+                    Entretien et extension de garantie offerts**<br>
+                    </span>			
+				</td>
+
+				<td>
+				<a href="p-2em - .html"  class="img-gra"><img src="photo-2.png" class="image-tableau"  ></a><br>	
+<span style="font-size:15px;">					GLB <br>
+                    À partir de 450 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 4 430 €<br>
+                    Entretien et extension de garantie offerts*<br>
+                    </span>
+				</td>
+			</tr>
+
+		</table>
+
+<div class="text-2" style="font-size: 17px;">
+<b>Consommations combinées de la Classe A (WLTP) : 1,0-9,1 l/100 km. CO2 combinées (WLTP) : 22-208 g/km. Depuis le 01/09/18, les véhicules légers neufs<br> sont réceptionnés en Europe sur la base de la procédure d’essai harmonisée pour les véhicules légers (WLTP), procédure d’essai permettant de<br> mesurer la consommation de carburant et les émissions de CO2, plus réaliste que la procédure NEDC précédemment utilisée.<br>
+Consommations combinées du GLB (WLTP) : 5,5-9,1 l/100 km. CO2 combinées (WLTP) : 143-208 g/km. Depuis le 1er septembre 2018, les véhicules légers <br>neufs sont réceptionnés en Europe sur la base de la procédure d’essai harmonisée pour les véhicules légers (WLTP), procédure d’essai permettant de <<br>mesurer la consommation de carburant et les émissions de CO2, plus réaliste que la procédure NEDC précédemment utilisée.</b></div> 
+
+<br><br>
+
+<h6 class="text-3">
+* Location Longue Durée : Classe A 160 Compacte Style Line BM6, 1er loyer de 2915€ et 36 loyers mensuels de 290 €. Modèle présenté : Modèle présenté : Classe A Compacte 160 AMG Line BM6, avec peinture Blanc Polaire, vitrage arrière et lunette arrière<br> teintés, 1er loyer de 2915€ et 36 loyers de 367€.<br>
+
+** ContratService SelectPlus de 37 mois/45000 km (1er terme échu) et extension de garantie constructeur selon conditions contractuelles disponibles auprès de votre Distributeur.<br>
+
+Offre valable pour un véhicule neuf en stock chez les Distributeurs participants commandé du 03 au 31/03/21 et livré avant le 28/12/21 (hors loueurs et flottes), sous réserve d’acceptation du dossier par Mercedes-Benz Financial Services SA,<br> 7 av. Niépce, 78180 Montigny. RCS Versailles 304 974 249, N° ORIAS 07009177, N° ICS FR77ZZZ149071.  (3) Au prix tarif remisé du 20/10/20. Détails sur mercedes-benz.<br>fr. Mercedes-Benz France RCS Versailles 622 044 287. Mercedes-Benz : marque déposée de Daimler AG. <br>
+
+* Location Longue Durée : GLB 200 d BA Progressive Line, 60000 km, 1er loyer de 4430€ et 36 loyers mensuels de 450€. Modèle présenté : GLB 200 d BA Progressive Line, avec <br>peinture gris montagne, train de roulement avec amortissement adaptatif, jantes alliage 50,8 cm (20") 5 branches gris trémolite/argent, pack premium plus, avertisseur d’angle mort, système de sonorisation surround Burmester, pack stationnement avec caméras panoramiques, garniture ,<br>en tissu/similicuir ARTICO marron bahia, inserts décoratifs en tilleul noir, affichage tête haute et projecteurs antibrouillard, 60 000 km, 1er loyer de 4430€ et 36 loyers de 627€.<br>
+
+** ContratService SelectPlus de 37 mois/60 000 km, 1er terme échu, et extension de la garantie constructeur offerts qui est ainsi portée à la durée mentionnée au contrat de location, pour tout contrat de LLD d’un GLB. Conditions Générales <br>de Vente des ContratsService disponibles auprès de votre distributeur.<br>
+
+Offre valable, chez les Distributeurs participants, en France métropolitaine et Monaco, pour un GLB neuf en stock, commandée du 03/03/2021 au 31/03/2021 et livrée avant le 28/12/2021 sous réserve d’acceptation du dossier<br> par Mercedes-Benz Financial Services SA, 7 av. Niépce, 78180 Montigny. RCS Versailles 304 974 249, N° ORIAS 07009177, N° ICS FR77ZZZ149071. Ne sont pas éligibles à cette offre : les loueurs longue durée et flottes, loueurs courte<br> durée, les auto-écoles, les véhicules de secours, de compétition et de courtoisie. Au prix tarif remisé du 20/10/2020.	
+</h6> 
+
+<br><br>        
+
+
+
+
+<div class="text-2">
+Offres du moment
+<br><br>
+<hr width="200" style="margin-right: 1825px;">
+<br>
+<span style="font-size: 30px; font-family: Lucida Bright" >Offres EQ Power </span>
+</div> 
+
+	<table style="margin-left: 100PX; margin-top: 60px;">
+			<tr>
+				<td>
+			<a href="p-4em.html" class="img-gra"><img src="photo-3.jpeg" class="image-tableau"></a><br>
+<span style="font-size:15px;"> 	Classe A Hybride rechargeable <br>
+                    À partir de 390 €/mois*<br>
+                    En LLD 37 mois 60 000 km - 1er loyer de 3 670 €<br>
+                    2 000€ de Bonus Ecologique déduits**<br>
+                </span>
+				</td>
+
+				<td>
+			<a href="p-3em - .html"  class="img-gra"><img src="photo-4.png" class="image-tableau"  ></a><br>
+<span style="font-size:15px;"> 	Jusqu'au 30 juin 2021, particuliers ou professionnels, profitez de 2 000 € de Bonus<br> Ecologique** sur la Classe A Compacte et Berline EQ Power, le Nouveau GLA EQ Power, la Classe B EQ Power, ainsi que sur le Nouveau <br>CLA Coupé et Shooting Brake EQ Power.</span>
+				</td>
+			</tr> 
+			</table>
+
+<br>  <br>
+			<div class="text-2" style="font-size: 17px;"> 				
+<b>Consommations combinées de la Classe A EQ Power selon norme WLTP : 1,0-1,3 l/100 km. Emissions de CO2 combinées (g/km) : 22-30 g/km. En savoir plus<br> sur la norme WLTP.<br>
+Depuis le 1er septembre 2018, les véhicules légers neufs sont réceptionnés en Europe sur la base de la procédure d'essai harmonisée pour les<br> véhicules légers (WLTP), procédure d'essai permettant de mesurer la consommation de carburant et les émissions de CO2, plus réaliste que la <br>procédure NEDC précédemment utilisée.</b><br>
+			</div> 
+<br><br>
+		<h6 class="text-3" >
+				*Location Longue Durée : Classe A 250 e Style Line BA8, 1er loyer de 5 670 €, ramené à 3 670 € après déduction du bonus écologique de 2 000 €**, et 36 loyers mensuels de 390 €***.<br>
+Modèle présenté : Classe A 250 e Progressive Line avec Peinture argent iridium métallisé, vitres et lunette arrière teintées, jantes alliage 45,7cm (18’’) à 5 doubles branches, 60 000 km, 1er loyer de 5 670 €, ramené à 3 670 €<br> après déduction du bonus écologique de 2000 €**, et 36 loyers de 520€***.<br>
+
+Offre valable dans la limite des stocks disponibles, pour toute commande d’un véhicule neuf du 01/01/21 au 31/03/21 et livraison avant le 28/12/21 chez les distributeurs participants, sous réserve d’acceptation du dossier par Mercedes-Benz<br> Financial Services SA, 7 av. Niepce, 78180 Montigny. RCS Versailles 304 974 249, N° ORIAS 07009177, N° ICS FR77ZZZ149071.<br>
+**Selon décret en vigueur, réservé au client personne physique, voir conditions sur www.service-public.fr.<br>
+***Au prix tarif remisé du 20/10/20.
+Mercedes-Benz France, SAS au capital de 75.516000€, 7 avenue Niepce, 78180, Montigny-le-Bretonneux - RCS VERSAILLES 622 044 287. Mercedes-Benz : marque déposée de Daimler AG.<br>
+
+
+**** Offre valable dans la limite des stocks disponibles, pour toute commande d'un véhicule éligible d’une valeur inférieur à 50 000€ TTC et émettant moins 50g de CO2, selon décret n° 2020-656 du 30 mai 2020 relatif aux aides à <br>l'acquisition ou à la location des véhicules peu polluants. Sous réserve d'éligibilité et de demande formulée par le client, voir conditions et démarches sur Service-public.fr.<br>
+			</h6>
+
+<div class="text-2">
+
+	Nos offres
+<br><br>
+<hr width="200" style="margin-right: 1825px;">
+<br>
+<span style="font-size: 30px; font-family: Lucida Bright" >Découvrez les offres que vous attendiez depuis longtemps<br></span>
+Profitez d'offres exclusives sur toutes les Mercedes neuves et bénéficiez de solutions de financement fléxibles.
+</div> 
+
+<br> <br>
+
+
+<table style="margin-left: 100PX; margin-top: 60px;">
+			<tr>
+				<td>
+		<a href="p-5em - .html"  class="img-gra"><img src="photo-9.jpeg" class="image-tableau"  ></a><br>
+<span style="font-size:15px;">LA Coupe<br>
+					À partir de 399 €/mois*<br>
+					Entretien et extension de garantie offerts**<br>
+					En LLD 37 mois 45 000 km - 1er loyer de 5 125 €.<br>
+                    </span>
+
+				</td>
+
+				<td>
+			<a href="p-6em - .html"  class="img-gra"><img src="photo-10.jpeg" class="image-tableau" "></a><br>
+<span style="font-size:15px;">CLA shooting Brake<br>
+					À partir de 419 €/mois*<br>
+					Entretien et extension de garantie offerts**<br>
+					En LLD 37 mois 45 000 km - 1er loyer de 4 565 €.<br>
+				</span>
+                </td>
+					
+			</tr> 
+			</table> 
+
+
+<div class="text-2" style="font-size: 17px;">
+<b>Consommations combinées de la Classe A coupe: 1,0-9,1 l/100 km. CO2 combinées (WLTP) : 22-208 g/km. Depuis le 01/09/18, les véhicules légers neufs<br>sont réceptionnés en Europe sur la base de la procédure d’essai harmonisée pour les véhicules légers berline, procédure d’essai permettant de<br> mesurer la consommation de carburant et les émissions de CO2, plus réaliste que la procédure NEDC précédemment utilisée.<br>
+Consommations combinées du GLB berline : 5,5-9,1 l/100 km. CO2 combinées coupe : 143-208 g/km. Depuis le 1er septembre 2018, les véhicules légers <br>neufs sont réceptionnés en Europe sur la base de la procédure d’essai harmonisée pour les véhicules légers coupe, procédure d’essai permettant de <<br>mesurer la consommation de carburant et les émissions de CO2, plus réaliste que la procédure NEDC précédemment utilisée.</b></div> 
+
+<br><br>
+
+<h6 class="text-3">
+* Location Longue Durée : Classe A 160 Compacte Style Line BM6, 1er loyer de 2915€ et 36 loyers mensuels de 290 €. Modèle présenté : Modèle présenté : Classe A Compacte 160 AMG Line BM6, avec peinture Blanc Polaire, vitrage arrière et lunette arrière<br> teintés, 1er loyer de 2915€ et 36 loyers de 367€.<br>
+
+** ContratService SelectPlus de 37 mois/45000 km (1er terme échu) et extension de garantie constructeur selon conditions contractuelles disponibles auprès de votre Distributeur.<br>
+
+Offre valable pour un véhicule neuf en stock chez les Distributeurs participants commandé du 03 au 31/03/21 et livré avant le 28/12/21 (hors loueurs et flottes), sous réserve d’acceptation du dossier par Mercedes-Benz Financial Services SA,<br> 7 av. Niépce, 78180 Montigny. RCS Versailles 304 974 249, N° ORIAS 07009177, N° ICS FR77ZZZ149071.  (3) Au prix tarif remisé du 20/10/20. Détails sur mercedes-benz.<br>fr. Mercedes-Benz France RCS Versailles 622 044 287. Mercedes-Benz : marque déposée de Daimler AG. <br>
+
+* Location Longue Durée : GLB 200 d BA Progressive Line, 60000 km, 1er loyer de 4430€ et 36 loyers mensuels de 450€. Modèle présenté : GLB 200 d BA Progressive Line, avec <br>peinture gris montagne, train de roulement avec amortissement adaptatif, jantes alliage 50,8 cm (20") 5 branches gris trémolite/argent, pack premium plus, avertisseur d’angle mort, système de sonorisation surround Burmester, pack stationnement avec caméras panoramiques, garniture ,<br>en tissu/similicuir ARTICO marron bahia, inserts décoratifs en tilleul noir, affichage tête haute et projecteurs antibrouillard, 60 000 km, 1er loyer de 4430€ et 36 loyers de 627€.<br>
+
+** ContratService SelectPlus de 37 mois/60 000 km, 1er terme échu, et extension de la garantie constructeur offerts qui est ainsi portée à la durée mentionnée au contrat de location, pour tout contrat de LLD d’un GLB. Conditions Générales <br>de Vente des ContratsService disponibles auprès de votre distributeur.<br>
+
+Offre valable, chez les Distributeurs participants, en France métropolitaine et Monaco, pour un GLB neuf en stock, commandée du 03/03/2021 au 31/03/2021 et livrée avant le 28/12/2021 sous réserve d’acceptation du dossier<br> par Mercedes-Benz Financial Services SA, 7 av. Niépce, 78180 Montigny. RCS Versailles 304 974 249, N° ORIAS 07009177, N° ICS FR77ZZZ149071. Ne sont pas éligibles à cette offre : les loueurs longue durée et flottes, loueurs courte<br> durée, les auto-écoles, les véhicules de secours, de compétition et de courtoisie. Au prix tarif remisé du 20/10/2020.	
+</h6> 
+<br> 
+</div> 
+
+ 
+</body> 
+	<footer  >
+
+	    <div class="footer-content">	
+	    <h5>code opacity</h5>
+	    <p>llorrem mam my na is glenn parker ima et futer</p>		 
+		<ul class="sociaux">
+<li></i><a class="lien" href="https://fr-fr.facebook.com/" target="-blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+
+<li><a  class="lien" href="https://twitter.com/twitter" target="-blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+
+	<li><a  class="lien" href="https://www.instagram.com/?hl=fr" target="-blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+		</ul>	
+
+		</div>
+
+		<div class="footer-botom">
+			<p>copyright &copy;2020 code opacity. dessigned by <span>GLENN-LEONARD</span></p>
+		</div>   
+</footer>
+</html>

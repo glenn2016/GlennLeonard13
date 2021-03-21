@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site de Présentation</title>
+	<link rel="stylesheet" type="text/css" href="C:\PC\COURS\HTML\EXAMEN\font-awesome-4.7.0\css\font-awesome.min.css"> 
+<style type="text/css">
+*{	
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	text-decoration: none;
+	font-family:Lucida Bright;
+	list-style: none;
+
+}
+.navbar{
+	width: 	100%;
+	position: absolute;
+	background-color: none;
+}
+.navbar .max-width{
+	width: 1300px;
+	display: flex;	
+	justify-content:space-between;	
+	align-content: 	center;	
+	margin: 20px auto;
+
+
+} 
+
+ul li a:hover{
+	background-color: #fff;
+    color: #000;
+    text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 1.1s ease;
+} 
+.mn::after{
+    content: "";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sous{
+    display: none;
+    position: absolute;
+}
+.active {
+	background-color: #fff;
+	color: black;
+}
+.active{
+	color: #black;
+}
+.sous li{
+    border: 2px solid  black;
+    float: none;
+    text-align: center;
+    width: 100%;
+    background-color: #fdcb6e;
+}
+.navbar .menu li:hover .sous{ 
+        display: block;
+
+} 
+
+.logo a{
+	color: 	#fff;
+	font-size:40px;
+	font-weight:500;
+}
+.logo a span{
+	color: 	#000;
+}
+
+.menu{
+	padding-top: 10px;
+}
+.menu li{
+	display:inline-block;	
+
+}
+.menu li a{
+
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+	margin-left: 95px;
+	transition: color 1s;
+}
+.menu li a:hover{
+	color: black;
+}
+
+.mn::after{
+    content: "";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sous{
+    display: none;
+    position: absolute;
+}
+
+.home{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('auto-1291491_1280.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+}
+
+.home .max-width{
+	color: white;
+	margin: auto 20px;
+
+}
+.home .home-content .text-1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.home .home-content .text-2{
+	color: crimson;
+	font-size: 60px;
+	font-weight: 600;
+}
+
+footer{
+	position: absolute;
+	bottom: -350px;
+	right: 0;
+	left:0;
+	background-color: black;
+	height: auto;
+	width: 100vw;
+	font-family: "open sans";
+	padding-top: 40px;
+	color: #fff;
+} 
+.footer-content{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size:1.8rem;
+	font-weight:400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+max-width: 500px;
+margin:  10px auto;
+line-height: 28px;
+font-size: 14px;
+} 
+.sociaux{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;	
+}
+.sociaux li{
+	margin: 0 10px;
+
+} 
+.sociaux a{
+	text-decoration: none;
+	color: white; 
+	transition: color 3.4s ease;
+}
+.sociaux a i{
+	font-size: 1.1rem;
+
+}
+.sociaux a:hover i{
+	color: aqua;
+
+}
+.footer-botom{
+	background:#000;
+	width: 100vw;
+	padding: 10px 0;
+	text-align: center;
+}
+.footer-botom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+
+}
+.footer-botom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+</style>
+
+	<link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+ 
+ <section class="home">
+		<nav class="navbar">
+			<div class="max-width">
+				<div class="logo">
+					<a><span>LO</span></a>
+				</div>
+			<ul class="menu">
+  <li><a href="index.html" class="active" style="color:black; padding:5px 20px;">Acceuil<i class="fa fa-home" aria-hidden="true"></i> </a></li>
+					<li><a href="a propos.html" >A propos <i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li><a class="mn" href="">Services  <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+						<ul class="sous">
+							<li><a href="maitenance.html">maitenance <i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+					           <li><a href="en vente.html">en vente  <i class="fa fa-venus" aria-hidden="true"></i></a></li>
+					           <li><a href="en location.html">en location  <i class="fa fa-thumb-tack" aria-hidden="true"></i></a></li>
+					     </ul>
+					</li>
+					<li><a href="contact.html">contact <i class="fa fa-address-card" aria-hidden="true"></i></a></li>
+
+				</ul>
+			</div>
+<input type="sear" name="searh" placeholder="recherche" style="  margin-top:200px;  margin-left:650px; color: black; font-size:50px;"> <i class="fa fa-search " aria-hidden="true" style="color: white;"></i>
+		</nav>
+		<
+		
+		
+		<div class="text-1" style=" margin-top:400px; margin-left:500px; color: white; font-size: 80px;"> voici venue la nouvelle <br> generation de mercedes</div>
+		                
+	<footer  >
+
+	    <div class="footer-content">	
+	    <h5>code opacity</h5>
+	    <p>llorrem mam my na is glenn parker ima et futer</p>		 
+		<ul class="sociaux">
+<li></i><a class="lien" href="https://fr-fr.facebook.com/" target="-blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+
+<li><a  class="lien" href="https://twitter.com/twitter" target="-blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+
+	<li><a  class="lien" href="https://www.instagram.com/?hl=fr" target="-blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: blue"></i></a></li>
+		</ul>	
+
+		</div>
+
+		<div class="footer-botom">
+			<p>copyright &copy;2020 code opacity. dessigned by <span>GLENN-LEONARD</span></p>
+		</div>   
+</footer>
+</html> 
+						
